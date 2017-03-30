@@ -1,0 +1,7 @@
+
+[todo]
+アイテム流し込み時に半角スペースでエラーとなるのでどこかでトリム処理を挟む
+
+[memo]
+csvファイルアップロード先が権限なくて読めないので以下を設定しておく
+chmod -R 777 /var/www/console/zabbix-api-wrapper/site/data

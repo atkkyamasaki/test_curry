@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Exchange styles
+   ========================================================================== */
+
+.endpoint {
+  position: relative;
+  margin-top: 24px;
+  padding: 8px 16px;
+  border: 1px solid #9E9E9E;
+  background-color: #F5F5F5;
+  .detail {
+    margin-bottom: 0;
+  }
+  .location {
+    position: absolute;
+    top: -16px;
+    left: 8px;
+    width: 120px;
+    padding: 4px 12px;
+    background-color: #9E9E9E;
+    @include border-radius(3px);
+    color: #FFFFFF;
+  }
+  .state {
+    color: #9E9E9E;
+  }
+  &.is-connected {
+    border: 1px solid #2196F3;
+    background-color: #BBDEFB;
+    .location {
+      background-color: #2196F3;
+    }
+    .state {
+      color: #2196F3;
+    }
+  }
+}
+
+.exchange-swap {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #2196F3;
+  cursor: pointer;
+}
+
+.result {
+  ul {
+    padding-left: 8px;
+    list-style-type: none;
+  }
+}
+
+.success,
+.error {
+  padding: 8px 16px;
+}
+
+.success {
+  color: #2196F3;
+  background-color: #BBDEFB;
+}
+
+.error {
+  color: #F44336;
+  background-color: #FFCDD2;
+}

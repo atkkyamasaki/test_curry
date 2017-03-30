@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Module styles
+   ========================================================================== */
+
+/*
+ * Font
+ */
+
+@import "font-awesome";
+
+.header {
+  background-color: #212121;
+  color: #FFFFFF;
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.global-navigation {
+  border-bottom: 1px solid $divider-color;
+  background-color: $background-color;
+  a {
+    color: #212121;
+    text-decoration: none;
+    &:hover {
+      background-color: #F5F5F5;
+    }
+  }
+}
+
+.article {
+  
+}
+
+.paginator {
+  ol {
+    @include reset-ul;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+.footer {
+  background-color: #212121;
+  color: #FFFFFF;
+}

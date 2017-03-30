@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Layout styles
+   ========================================================================== */
+
+.header {
+  padding: 0 24px;
+  @include clearfix;
+}
+
+.global-navigation {
+  padding: 0 24px;
+  @include clearfix;
+  ul {
+    @include reset-ul;
+  }
+  li {
+    float: left;
+  }
+  a {
+    display: block;
+    padding: 16px;
+  }
+}
+
+.article {
+  padding: 0 24px;
+  @include clearfix;
+}
+
+.paginator {
+  padding: 0 24px;
+  @include clearfix;
+}
+
+.footer {
+  margin-top: 16px;
+  padding: 0 24px;
+  @include clearfix;
+}
