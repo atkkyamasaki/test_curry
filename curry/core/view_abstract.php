@@ -365,23 +365,23 @@ abstract class ViewAbstract extends CurryClass
 	/**
 	 * Set default view template use for rendering on error.
 	 * 
-	 * @param string $tamplateName
+	 * @param string $templateName
 	 * @return void
 	 */
 	public static function setDefaultErrorTemplate($tamplateName)
 	{
-		self::$_defaultErrorTemplate = $tamplateName;
+		self::$_defaultErrorTemplate = $templateName;
 	}
 	
 	/**
 	 * Set view template use for rendering on error.
 	 *
-	 * @param string $tamplateName Template file name
+	 * @param string $templateName Template file name
 	 * @return void
 	 */
-	public function setErrorTemplate($tamplateName)
+	public function setErrorTemplate($templateName)
 	{
-		$this->_errorTemplate = $tamplateName;
+		$this->_errorTemplate = $templateName;
 	}
 	
 	/**
